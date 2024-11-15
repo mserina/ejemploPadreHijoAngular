@@ -13,11 +13,11 @@ export class HijoComponent {
   @Input() datoHijo: string  = 'Vacio';
 
   //DEFINE (no lanza) un evento al padre
-  @Output() meHanHechoClick = new EventEmitter<void>(); //El void declara que no se va a enviar ningun evento, solo avisa de que va a lanzarse un evento
+  @Output() meHanHechoClick = new EventEmitter<String>(); //El void declara que no se va a enviar ningun evento, solo avisa de que va a lanzarse un evento
 
   //Este metodo LANZA el evento
   disparaElEvento(){
-    this.meHanHechoClick.emit(); //Lanza el evento usando el metodo emit
+    this.meHanHechoClick.emit('Este string es del hijo'); //Lanza el evento usando el metodo emit
   }
 
   

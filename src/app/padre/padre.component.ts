@@ -10,15 +10,15 @@ import { HijoComponent } from "../hijo/hijo.component";
 })
 export class PadreComponent {
 
+
 saludo(){
   alert('Hola Clase');
 
   } 
 
   datoPadre =  'Ejemplo de dato que viene del padre, solo se imprimira desde el componente hijo';
-
-
-  recibidoDelHijo(){
-    alert('EL PADRE: El hijo me ha enviado su evento');
+ 
+  recibidoDelHijo(textoHijo: String){
+    alert('EL PADRE: ' + textoHijo);
   }
 }

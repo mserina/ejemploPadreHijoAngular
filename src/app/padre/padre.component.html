@@ -1,0 +1,4 @@
+<button (click)="saludo()">Pulsame</button>
+
+<!-- Comunicacion desde padre a hijo -->
+<app-hijo [datoHijo]="datoPadre" (meHanHechoClick)="recibidoDelHijo()"></app-hijo> <!-- Se mete en el dato del hijo el dato de padre -->
